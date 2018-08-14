@@ -17,6 +17,4 @@ def aboutus(request):
     context = {
         "tag1": "This text is from About.html"
     }
-
-
     return HttpResponse(template_name.render(context, request))
