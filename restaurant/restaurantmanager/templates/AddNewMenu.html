@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Add New Menu Page.</p>
+    <form action="#" method="post">
+        {% csrf_token %}
+        <label for="name">Enter your name:</label>
+        <input id="name" type="text" name="name" value="Default value for menu.">
+        <input type="submit" value="Ok">
+    </form>
+
+{% endblock %}
