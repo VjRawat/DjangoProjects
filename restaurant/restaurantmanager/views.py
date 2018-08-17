@@ -33,6 +33,7 @@ def detail(request, recipe_name):
     context = {
         "details": menu_details
     }
+<<<<<<< HEAD
 
     # return HttpResponse("Display the details of: %s " % recipe_name)
     return HttpResponse(template_name.render(context, request))
@@ -47,3 +48,6 @@ def add_new_menu_item(request):
             new_entry.save()
 
     return render(request, 'AddNewMenu.html')
+=======
+    return HttpResponse(template_name.render(context, request))
+>>>>>>> 3d75eec264f97c45711ec92c93e0ab6494c06c82
